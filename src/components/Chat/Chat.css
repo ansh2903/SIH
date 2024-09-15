@@ -1,0 +1,165 @@
+.chat {
+  flex: 2;
+  border-left: 1px rgba(206, 202, 202, 0.453) solid;
+  display: flex;
+  flex-direction: column;
+
+  .top .chatUser {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px rgba(206, 202, 202, 0.453) solid;
+  }
+
+  .chatUser img {
+    height: 4vw;
+    width: 4vw;
+    object-fit: cover;
+  }
+}
+
+.chatUser .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  span {
+    font-size: 1.5vw;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 0.9vw;
+    font-weight: 400;
+    color: grey;
+  }
+}
+
+.chatUser .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 42vw;
+}
+
+.chatUser .icons img {
+  height: 1.5vw;
+  width: 1.5vw;
+  opacity: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.center {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: scroll;
+
+  .message {
+    display: flex;
+    width: 70%;
+    gap: 10px;
+
+    .text {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 5px;
+
+      p {
+        padding: 20px;
+        background-color: #29334d2f;
+        border-radius: 10px;
+      }
+    }
+
+    &.own {
+      align-self: flex-end;
+      .text {
+        p {
+          background-color: #5183fe;
+          color: white;
+          padding: 20px;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    img {
+      height: 1.5vw;
+      width: 1.5vw;
+      object-fit: cover;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      span {
+        font-size: 0.7vw;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 2vw;
+  border-top: 1px rgba(206, 202, 202, 0.453) solid;
+  margin-top: auto;
+
+  .icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .icons img {
+    height: 1.5vw;
+    width: 1.5vw;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  input {
+    flex: 1;
+    background-color: rgba(172, 186, 232, 0.148);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1vw;
+  }
+
+  .emoji {
+    position: relative;
+    .picker {
+      position: absolute;
+      right: 0;
+      bottom: 50px;
+    }
+  }
+
+  .emoji img {
+    height: 1.5vw;
+    width: 1.5vw;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  .sendButton {
+    border: none;
+    padding: 10px 20px;
+    background-color: #5183fe;
+    color: white;
+    border-radius: 20px;
+  }
+}

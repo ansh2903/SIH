@@ -1,0 +1,34 @@
+.navbar {
+  height: 5vh;
+  width: 100%;
+  background-color: #FFA62F;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 30px;
+}
+
+.navbar h3{
+  color: white;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2.5vw;
+  margin-right: 2vw;
+
+  img {
+    width: 2vw;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  .dropMenu {
+    width: 1.2vw;
+    object-fit: cover;
+  }
+}

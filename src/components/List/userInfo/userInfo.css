@@ -1,0 +1,18 @@
+.user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 1px rgba(206, 202, 202, 0.453) solid;
+  background-color: purple;
+
+  h3{
+    color: white;
+  }
+}
+
+.user img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
